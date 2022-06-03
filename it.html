@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="acadamics.html">ACADEMICS</a></li>
+                    <li><a href="facilities (1).html">FACILITIES</a></li>
+                    <li><a href="campuslife.html">CAMPUS LIFE</a></li>
+                    <li><a href="placements.html">PLACEMENTS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Department of IT</h1>
+    </section>
+
+
+<!-- it department -->
+    <section class="dept-it">
+        <table class="hero-btn red-btn" border="0" width="700" cellspacing="10" cellpadding="20">
+            <tr>
+                <th>S.NO</th>
+                <th>FACULTYNAME</th>
+                <th>EXPERIENCE</th>
+                <th>DEPARTMENT VISION</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mr.Guptha</td>
+                <td>10yrs</td>
+                <td rowspan="2">Department Vision
+                    To be a center of excellence in the field of information technology that yields pioneers and research experts who can contribute for the socio­economic development of the nation.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mrs.Vanitha mehra</td>
+                <td>8yrs</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mr.Nagendra reddy</td>
+                <td>12yrs</td>
+                <th>DEPARTMENT MISSION</th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mr.Ravindher Reddy</td>
+                <td>5yrs</td>
+                <td rowspan="3">
+                    <ol>
+                        <li>To impart state-of-the-art value based education in the field of Information Technology.</li>
+                        <li>To collaborate with industries and research organizations and excel in the emerging areas of research.</li>
+                        <li>To imbibe social responsibility in students.</li>
+                        <li>To motivate students to be trend setters and technopreneurs.</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <i><h1>Best projects by final year students of 2022 : </h1></i>
+        <div class="row">
+            <div class="col1">
+                <h4>1.Fingerprint-based security system</h4><br>
+                <img src="images/it1.jpg">
+            </div>
+            <div class="col1">
+                <h4>2.Weather forecasting systems</h4><br>
+                <img src="images/it2.jpg">
+            </div>
+            <div class="col1">
+                <h4>3.Credit card fraud detection</h4><br>
+                <img src="images/it3.png">
+            </div>
+
+    </section>
+
+<!-- FOOTER -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are spread almost in all the social media platforms<br>
+            like twitter,instagram,facebook,snapchat,whatsapp,telegram,signal,linkedin,github etc.....</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made by <i class="fa fa-heart-o"></i> Alekhya,Chandralekha,Jhahnavi,Kiranmai,Pravalika.</p>
+    </section>
+<!-- Javascript for toggle menu -->
+<script>
+var navLinks=document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right="0";
+}
+function hideMenu(){
+    navLinks.style.right="-200px";
+}
+</script>
+</body>
+</html>

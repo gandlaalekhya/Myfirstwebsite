@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+
+    <script>
+        function Validate()
+        {
+            var usnm=document.getElementById("uname");
+            var pswd=document.getElementById("password");
+            var reg1=/^([a-z A-Z 0-9 \. -]+)@([a-z A-Z 0-9 -]+).([a-z]{2,8})(.[a-z]{2-8})?$/;
+            var reg2=/[a-z A-Z 0-9 \. @ $]{8,15}/;
+            if(usnm.value.trim()=="" || pswd.value.trim()=="")
+            {
+                alert("No blank values are allowed");
+                return false;
+            }
+            else if(reg1.test(usnm.value)==false)
+            {
+                document.getElementById("lb1").style.visibility="visible";
+                usnm.style.border="solid 3px red";
+                usnm.value="";
+                return false;
+            }
+            else if(reg2.test(pswd.value)==false)
+            {
+                if(pswd.value.length<8)
+                {
+                    document.getElementById("lb2").innerHTML="*Password should contain atleast 8 characters";
+                    document.getElementById("lb2").style.visibility="visible";
+                    pswd.style.border="solid 3px red";
+                    pswd.value=""
+                    return false;
+                }
+                else
+                {
+                    document.getElementById("lb2").style.visibility="visible";
+                    pswd.style.border="solid 3px red";
+                    pswd.value=""
+                    return false;
+                }
+                
+            }
+            else
+            {
+                usnm.value="";
+                pswd.value="";
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <section class="login-form">
+        <div class="heading">
+            <h1>Student login form</h1>
+            <img src="images/login.jpg">
+        </div>
+        <div class="details">
+            <form onsubmit="return Validate()" action="index.html">
+            <input type="text" id="uname" placeholder="Username"><br>
+            <label id="lb1" style="color:red; visibility:hidden;">*Invalid Username</label><br><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <label id="lb2" style="color:red; visibility:hidden;">*Invalid Password</label><br><br>
+            <button type="submit"><b>SUBMIT</b></button>
+        </div>
+    </section>
+    </form>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="acadamics.html">ACADEMICS</a></li>
+                    <li><a href="facilities (1).html">FACILITIES</a></li>
+                    <li><a href="campuslife.html">CAMPUS LIFE</a></li>
+                    <li><a href="placements.html">PLACEMENTS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+<!-- COURSE -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer 20+ courses in our university and few of them are already mentioned below.University have fully equiped labs where students can explore more.</p>
+        <div class="row">
+            <div class="course-col">
+                <a href="cse.html"><img src="images/csetop.jpg" id="cse" onmouseover="setNewImage1()" onmouseout="setOldImage1()"></a>
+                <h3>CSE</h3>
+                <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.Computer Science engineering has roots in electrical engineering, mathematics, and linguistics. In the past Computer Science was taught as part of mathematics or engineering departments & in the recent days it has emerged as a separate engineering field.</p>
+            </div>
+            <div class="course-col">
+                <a href="ece.html"><img src="images/ecetop.jpg" id="ece" onmouseover="setNewImage2()" onmouseout="setOldImage2()"></a>
+                <h3>ECE</h3>
+                <p>Electronics & Communication Engineering deals with the electronic devices, circuits, communication equipments like transmitter, receiver, integrated circuits (IC). It also deals with basic electronics, analog and digital transmission & reception of data, voice and video (Example AM, FM, DTH), microprocessors, satellite communication, microwave engineering, antennae and wave progression. It aims to deepen the knowledge and skills of the students on the basic concepts.</p>
+            </div>
+            <div class="course-col">
+                <a href="it.html"><img src="images/ittop.jpg"  id="it" onmouseover="setNewImage3()" onmouseout="setOldImage3()"></a>
+                <h3>IT</h3>
+                <p>Information technology (IT) is the use of any computers, storage, networking and other physical devices, infrastructure and processes to create, process, store, secure and exchange all forms of electronic data. Typically, IT is used in the context of business operations, as opposed to technology used for personal or entertainment purposes. The commercial use of IT encompasses both computer technology and telecommunications.</p>
+            </div>
+        </div>
+
+        <div class="rowise">
+            <div class="course-col">
+                <a href="eee.html"><img src="images/eeetop.jpg" id="eee" onmouseover="setNewImage4()" onmouseout="setOldImage4()"></a>
+                <h3>EEE</h3>
+                <p>Electrical and Electronics Engineering (EEE) is a popular engineering course that imparts knowledge related to electrical and machine technology, circuit analysis, telecommunication systems, power engineering and its related industries. A four-year undergraduate course, EEE also emphasises the manufacture and design of electrical devices and the integration of their components into complex systems.</p>
+                
+            </div>
+            <div class="course-col">
+                <a href="mech.html"><img src="images/mechtop.png" id="mech" onmouseover="setNewImage5()" onmouseout="setOldImage5()"></a>
+                <h3>MECH</h3>
+                <p>Technically, mechanical engineering is the application of the principles and problem-solving techniques of engineering from design to manufacturing to the marketplace for any object. Mechanical engineers analyze their work using the principles of motion, energy, and force—ensuring that designs function safely, efficiently, and reliably, all at a competitive cost.</p>
+            </div>
+            <!-- <div class="course-col">
+                <img src="images/civiltop.jpg" width="95%" id="civil" onmouseover="setNewImage6()" onmouseout="setOldImage6()">
+                <h3>CIVIL</h3>
+                <p>Civil engineering is arguably the oldest engineering discipline. It deals with the built environment and can be dated to the first time someone placed a roof over his or her head or laid a tree trunk across a river to make it easier to get across. Buildings and bridges are often the first constructions that come to mind, as they are the most conspicuous creations of structural engineering, one of civil engineering's major sub-disciplines. Roads, railroads, subway systems, and airports are designed by transportation engineers, another category of civil engineering.</p>
+            </div> -->
+        </div>
+    </section>
+
+
+
+<!-- FOOTER -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are spread almost in all the social media platforms<br>
+            like twitter,instagram,facebook,snapchat,whatsapp,telegram,signal,linkedin,github etc.....</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made by <i class="fa fa-heart-o"></i> Alekhya,Chandralekha,Jhahnavi,Kiranmai,Pravalika.</p>
+    </section>
+<!-- Javascript for toggle menu -->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+    
+    
+    function setNewImage1()
+    {
+        document.getElementById("cse").src="images/csedown.jpg";
+    }
+    function setOldImage1()
+    {
+        document.getElementById("cse").src="images/csetop.jpg";
+    }
+    
+    
+    function setNewImage2()
+    {
+        document.getElementById("ece").src="images/ecedown.jpg";
+    }
+    function setOldImage2()
+    {
+        document.getElementById("ece").src="images/ecetop.jpg";
+    }
+    
+    
+    function setNewImage3()
+    {
+        document.getElementById("it").src="images/itdown.jpg";
+    }
+    function setOldImage3()
+    {
+        document.getElementById("it").src="images/ittop.jpg";
+    }
+    
+    
+    function setNewImage4()
+    {
+        document.getElementById("eee").src="images/eeedown.jpg";
+    }
+    function setOldImage4()
+    {
+        document.getElementById("eee").src="images/eeetop.jpg";
+    }
+    
+    
+    function setNewImage5()
+    {
+        document.getElementById("mech").src="images/mechdown.jpg";
+    }
+    function setOldImage5()
+    {
+        document.getElementById("mech").src="images/mechtop.png";
+    }
+    
+    
+    // function setNewImage6()
+    // {
+    //     document.getElementById("civil").src="images/civildown.jpg";
+    // }
+    // function setOldImage6()
+    // {
+    //     document.getElementById("civil").src="images/civiltop.jpg";
+    // }
+</script>
+</body>
+</html>
